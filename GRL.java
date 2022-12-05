@@ -10,7 +10,7 @@ public class GRL {
 
         public void exportdata(int line) throws IOException{
             String path = "";
-            File file = new File(path);
+            File file = new File(export.csv);
             FileWriter fw = new FileWriter(file,true);
             BufferedWriter bw = new BufferedWriter(fw);
             bw.write(line);
